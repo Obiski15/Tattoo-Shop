@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: 38 11% 15%;
+  --foreground: 0, 0%, 100%;
+
+  --primary: 28, 61%, 64%;
+  --primary-foreground: 40, 20%, 6%;
+}
+
+@layer base {
+  .review-user-mask {
+    mask-image: url("/icons/hexagon.svg");
+    mask-repeat: no-repeat;
+    mask-position: center;
+    filter: drop-shadow(0 0.25em 1.5em #eddcce);
+  }
+
+  ::-webkit-scrollbar {
+    display: none;
+  }
+}
